@@ -1,0 +1,13 @@
+<h1>Exercicio 1/2</h1>
+
+<h2>Digite seu nome:</h2>
+
+<input type="text" [(ngModel)]="nome" placeholder="Digite seu nome....">
+
+<p><button (click)="exibirDados()" [ngClass]="{'vermelho': corAlterada}">Enviar</button></p>
+<p><button (click)="limpar()">Limpar</button></p>
+
+<p *ngIf="nomeExibido">Nome digitado: {{ nome }}</p>
+
+<p><button (click)="trocarCor()">Trocar Cor</button></p>
+
